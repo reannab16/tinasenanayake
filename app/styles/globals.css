@@ -1,7 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --dark-purple: #87349D;
+  --trans-purple: rgba(135, 52, 157, 0.8);
+  --light-purple: #C296C7;
+  --bg-trans-purple: rgba(135, 52, 157, 0.15);
+  --cream: #FFFBF3;
+  --trans-cream: rgba(255, 251, 243, 0.14);
+  --text-colour: #593C28;
+  --maybe-text-colour: #6B5539;
+  --bright-pink: #F45B9C;
+  --vlight-purple: #EDDEE6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* * {
+  border: solid red 2px;
+} */
+
 @layer base {
   :root {
     --background: 0 0% 100%;

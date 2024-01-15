@@ -7,11 +7,12 @@ import NavBar from "./components/nav/NavBar";
 import Footer from "./components/footer/footer";
 import { ThemeProvider } from "@emotion/react";
 import theme from "./styles/theme";
+import {Open_Sans as FontSans} from "next/font/google";
 
 export const opensans = Open_Sans({ subsets: ["latin"] });
 
-export const fontsans = Open_Sans({ subsets: ["latin"],
-variable: "--font-sans",})
+// export const fontsans = Open_Sans({ subsets: ["latin"],
+// variable: "--font-sans",})
 
 // export const metadata: Metadata = {
 //   title: "Tina Senanayake Jewels",
