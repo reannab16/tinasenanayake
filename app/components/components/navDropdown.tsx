@@ -51,8 +51,8 @@ export default function NavDropdown({ links }: { links: LinkType[] }) {
                       );
                     })}
                     
-                    <div className="py-2 px-1 whitespace-nowrap font-semibold border-t-[1px] w-full border-[var(--trans-cream)]">
-                      By Jewel
+                    <div className="py-2 text-sm px-1 mt-1 whitespace-nowrap font-semibold border-t-[1px] w-full border-[var(--trans-cream)]">
+                      by metal
                     </div>
                     <NavigationMenuLink
                       asChild
