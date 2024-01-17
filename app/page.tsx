@@ -1,5 +1,6 @@
 import Carousel from "./components/homePage/carousel";
 import Collections from "./components/homePage/collections";
+import Insta from "./components/homePage/insta";
 import { BannerImage1 } from "./components/icons";
 
 
@@ -9,6 +10,7 @@ export default function Home() {
       {/* <BannerImage1 className=""/> */}
       <Carousel/>
       <Collections/>
+      <Insta/>
       
     </main>
   )
