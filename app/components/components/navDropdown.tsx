@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,26 +10,65 @@ import {
   NavigationMenuViewport,
 } from "../ui/navigation-menu";
 import { LinkType } from "../nav/NavBar";
+import Link from "next/link";
 
 export default function NavDropdown({ links }: { links: LinkType[] }) {
+  const [which, setWhich] = useState("");
   return (
     <NavigationMenu>
-      <NavigationMenuList className="w-full gap-x-20 flex justify-center text-sm">
+      <NavigationMenuList className="w-full gap-x-20 flex justify-center text-sm ">
         {links.map((item) => {
           return (
             <>
               {item.jewel ? (
-                <NavigationMenuItem key={item.name}>
-                  <NavigationMenuTrigger>{item.name}</NavigationMenuTrigger>
-                  <NavigationMenuContent className="flex flex-col justify-start items-start px-3 border-0 bg-[var(--light-purple)] outline-0 text-[var(--cream)]">
+                <NavigationMenuItem
+                  key={item.name}
+                  className="relative "
+                  onMouseOver={() => {
+                    setWhich(item.name);
+                  }}
+                >
+                  {item.name === which && (
+                    <NavigationMenuViewport className="absolute left-0" />
+                  )}
+
+                  <NavigationMenuTrigger className="relative ">
+                    {item.name}{" "}
+                  </NavigationMenuTrigger>
+
+                  <NavigationMenuContent className="flex flex-col justify-start items-start px-1 py-1 border-0 bg-[var(--light-purple)] outline-0 text-[var(--cream)]">
                     {item.dropdown?.map((item) => {
                       return (
-                        <NavigationMenuLink className="py-2 whitespace-nowrap">
-                          {item.name}
+                        <NavigationMenuLink
+                          asChild
+                          className="py-2 px-2 whitespace-nowrap hover:bg-[var(--trans-cream)] rounded-md w-full"
+                        >
+                          <Link href="" className="cursor-pointer ">
+                            {item.name}
+                          </Link>
                         </NavigationMenuLink>
                       );
                     })}
-                    <div className="py-2 whitespace-nowrap font-semibold">By Jewel</div>
+                    
+                    <div className="py-2 px-1 whitespace-nowrap font-semibold border-t-[1px] w-full border-[var(--trans-cream)]">
+                      By Jewel
+                    </div>
+                    <NavigationMenuLink
+                      asChild
+                      className="py-2 px-2 whitespace-nowrap hover:bg-[var(--trans-cream)] rounded-md w-full"
+                    >
+                      <Link href="" className="cursor-pointer ">
+                        gold plated
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink
+                      asChild
+                      className="py-2 px-2 whitespace-nowrap hover:bg-[var(--trans-cream)] rounded-md w-full"
+                    >
+                      <Link href="" className="cursor-pointer ">
+                        silver
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               ) : (

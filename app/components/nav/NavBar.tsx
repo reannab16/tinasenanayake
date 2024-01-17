@@ -46,16 +46,6 @@ export default function NavBar() {
       </div>
       <div className="w-full gap-x-20 flex justify-center text-sm">
         <NavDropdown links={links}/>
-        {/* {links.map((item) => {
-          return (
-            <div
-              key={item.name}
-              className="py-1 px-3 rounded-full hover:bg-[var(--light-purple)] hover:text-[var(--cream)] duration-300 cursor-pointer "
-            >
-              {item.name}
-            </div>
-          );
-        })} */}
       </div>
     </div>
   );
@@ -95,10 +85,10 @@ const links: LinkType[] = [
         name: "evil eye",
         link: "",
       },
-      {
-        name: "double chain",
-        link: "",
-      },
+      // {
+      //   name: "double chain",
+      //   link: "",
+      // },
     ],
   },
   {
@@ -109,7 +99,23 @@ const links: LinkType[] = [
       {
         name:"all earrings",
         link: "",
-      }
+      },
+      {
+        name: "stud earrings",
+        link: "",
+      },
+      {
+        name: "drop earrings",
+        link: "",
+      },
+      {
+        name: "hoop earrings",
+        link: "",
+      },
+      {
+        name: "statement earrings",
+        link: "",
+      },
     ]
   },
   {
