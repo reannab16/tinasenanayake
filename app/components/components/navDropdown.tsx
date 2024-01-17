@@ -19,7 +19,7 @@ export default function NavDropdown({ links }: { links: LinkType[] }) {
       <NavigationMenuList className="w-full gap-x-20 flex justify-center text-sm ">
         {links.map((item) => {
           return (
-            <>
+            <div key={item.name}>
               {item.jewel ? (
                 <NavigationMenuItem
                   key={item.name}
@@ -42,6 +42,7 @@ export default function NavDropdown({ links }: { links: LinkType[] }) {
                         <NavigationMenuLink
                           asChild
                           className="py-2 px-2 whitespace-nowrap hover:bg-[var(--trans-cream)] rounded-md w-full"
+                          key={item.name}
                         >
                           <Link href="" className="cursor-pointer ">
                             {item.name}
@@ -79,7 +80,7 @@ export default function NavDropdown({ links }: { links: LinkType[] }) {
                   {item.name}
                 </div>
               )}
-            </>
+            </div>
           );
         })}
       </NavigationMenuList>
