@@ -4,7 +4,8 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import { PinkPaisleyLeft, PinkPaisleyRight } from "../icons";
-import DropDown from "../components/dropdown";
+import NavDropdown from "../components/navDropdown";
+
 
 export default function NavBar() {
     const cartCount = 0;
@@ -44,17 +45,7 @@ export default function NavBar() {
         </div>
       </div>
       <div className="w-full gap-x-20 flex justify-center text-sm">
-        <DropDown name={""} link={""}/>
-        {links.map((item) => {
-          return (
-            <div
-              key={item.name}
-              className="py-1 px-3 rounded-full hover:bg-[var(--light-purple)] hover:text-[var(--cream)] duration-300 cursor-pointer "
-            >
-              {item.name}
-            </div>
-          );
-        })}
+        <NavDropdown links={links}/>
       </div>
     </div>
   );
@@ -63,6 +54,7 @@ export default function NavBar() {
 export type LinkType = {
   name: string;
   link: string;
+  jewel: boolean;
   dropdown?: DropType[];
 };
 
@@ -75,6 +67,7 @@ const links: LinkType[] = [
   {
     name: "necklaces",
     link: "",
+    jewel: true,
     dropdown: [
       {
         name: "all necklaces",
@@ -92,26 +85,65 @@ const links: LinkType[] = [
         name: "evil eye",
         link: "",
       },
-      {
-        name: "double chain",
-        link: "",
-      },
+      // {
+      //   name: "double chain",
+      //   link: "",
+      // },
     ],
   },
   {
     name: "earrings",
     link: "",
+    jewel: true,
+    dropdown: [
+      {
+        name:"all earrings",
+        link: "",
+      },
+      {
+        name: "stud earrings",
+        link: "",
+      },
+      {
+        name: "drop earrings",
+        link: "",
+      },
+      {
+        name: "hoop earrings",
+        link: "",
+      },
+      {
+        name: "statement earrings",
+        link: "",
+      },
+    ]
   },
   {
     name: "rings",
     link: "",
+    jewel: true,
+    dropdown: [
+      {
+        name:"all rings",
+        link: "",
+      }
+    ]
   },
+
   {
     name: "bracelets",
     link: "",
+    jewel: true,
+    dropdown: [
+      {
+        name:"all bracelets",
+        link: "",
+      }
+    ]
   },
   {
     name: "workshops",
     link: "",
+    jewel: false,
   },
 ];
