@@ -12,7 +12,7 @@ export default function Collections() {
       <div className="flex items-center justify-center gap-x-[30px] gap-y-[70px] w-[876px] flex-wrap">
         {categories.map((cate) => {
           return (
-            <div className="border-[1px] h-[313px] border-[var(--dark-purple)] border-solid rounded-xl">
+            <div className="border-[1px] h-[313px] border-[var(--dark-purple)] border-solid rounded-xl" key={cate.name}>
               {cate.img}
               <div className="w-full flex items-center justify-center h-[41px] rounded-b-xl text-sm bg-[var(--cream)]"><span className="text-[var(--maybe-text-colour)]">{cate.name}</span>&nbsp;<span className="text-[var(--trans-maybe-text-colour)]">{cate.quantity ? `(${cate.quantity})`: ""}</span></div>
             </div>
