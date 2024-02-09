@@ -55,7 +55,7 @@ export default function MobileMenu({ links }: { links: LinkType[] }) {
           {" "}
           {links.map((link, ref) => {
             return (
-              <>
+              <div key={ref}>
                 {link.dropdown ? (
                   <AccordionItem
                     value={`item-${ref}`}
@@ -65,7 +65,7 @@ export default function MobileMenu({ links }: { links: LinkType[] }) {
                     <AccordionContent className="text-sm">
                       {link.dropdown?.map((drop) => {
                         return (
-                          <div className="py-1">
+                          <div className="py-1" key={drop.name}>
                             <Link href={drop.link}>{drop.name}</Link>
                           </div>
                         );
@@ -84,7 +84,7 @@ export default function MobileMenu({ links }: { links: LinkType[] }) {
                     {link.name}
                   </div>
                 )}
-              </>
+              </div>
             );
           })}
         </Accordion>
