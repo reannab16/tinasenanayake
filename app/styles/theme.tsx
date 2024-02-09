@@ -6,16 +6,34 @@ const theme = createTheme({
       primary: {
         main: "#C296C7",
         contrastText: "#FFFBF3",
-        light: "rgba(20, 158, 84, 0.8)", //idk what this is yet
+        light: "#C296C7", //idk what this is yet
       },
       secondary: {
-        main: "#FFFBF3",
-        dark: "#87349D",
-        contrastText: "#6B5539",
+        main: "#C296C7",
+        dark: "#C296C7",
+        contrastText: "#FFFBF3",
       },
       action: {
         disabledBackground: "rgba(20, 158, 84, 0.35)",
         disabled: "#FFF",
+      },
+    },
+
+    components: {
+      MuiButton: {
+        styleOverrides: {
+          root: {
+            
+          },
+        },
+      },
+      
+    },
+  
+    typography: {
+      button: {
+        textTransform: "none",
+        fontWeight: 500,
       },
     },
   

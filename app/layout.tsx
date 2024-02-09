@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <ThemeProvider theme={theme}>
         <body className={`${opensans.className} bg-[var(--cream)]`}>
-          <div className="flex flex-col min-h-screen items-center">
+          <div className="flex flex-col min-h-screen items-center overflow-x-hidden">
             <Banner />
             <NavBar />
             <main className="">{children}</main>

@@ -16,7 +16,7 @@ export default function NavDropdown({ links }: { links: LinkType[] }) {
   const [which, setWhich] = useState("");
   return (
     <NavigationMenu>
-      <NavigationMenuList className="w-full gap-x-20 flex justify-center text-sm ">
+      <NavigationMenuList className="w-full gap-x-16 flex justify-center text-sm ">
         {links.map((item) => {
           return (
             <div key={item.name}>
