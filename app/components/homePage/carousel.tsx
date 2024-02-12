@@ -38,13 +38,13 @@ export default function carousel() {
             <img src="/images/bannerimage3.jpg" alt="Image 2" />
           </SplideSlide>
           <SplideSlide>
-            <img src="/images/bannerimage5.jpg" alt="Image 2" />
+            <img src="/images/bannerimage5.jpg" alt="Image 3" />
           </SplideSlide>
           <SplideSlide>
-            <img src="/images/bannerimage4.jpg" alt="Image 2" />
+            <img src="/images/bannerimage4.jpg" alt="Image 4" />
           </SplideSlide>
           <SplideSlide>
-            <img src="/images/bannerimage6.jpg" alt="Image 2" />
+            <img src="/images/bannerimage6.jpg" alt="Image 5" />
           </SplideSlide>
         </SplideTrack>
         <div className="splide__arrows border-red-500 border-solid border-2 " />
