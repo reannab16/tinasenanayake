@@ -25,26 +25,26 @@ export default function carousel() {
       >
         <SplideTrack className="absolute top-8">
           <SplideSlide>
-            <img src="bannerimage1.jpg" alt="Image 1" />
+            <img src="/images/bannerimage1.jpg" alt="Image 1" />
           </SplideSlide>
           <SplideSlide>
             <img
-              src="bannerimage2.jpg"
+              src="/images/bannerimage2.jpg"
               alt="Image 2"
               className="2xl:w-[1440px] w-screen h-[35.5rem]"
             />
           </SplideSlide>
           <SplideSlide>
-            <img src="bannerimage3.jpg" alt="Image 2" />
+            <img src="/images/bannerimage3.jpg" alt="Image 2" />
           </SplideSlide>
           <SplideSlide>
-            <img src="bannerimage5.jpg" alt="Image 2" />
+            <img src="/images/bannerimage5.jpg" alt="Image 2" />
           </SplideSlide>
           <SplideSlide>
-            <img src="bannerimage4.jpg" alt="Image 2" />
+            <img src="/images/bannerimage4.jpg" alt="Image 2" />
           </SplideSlide>
           <SplideSlide>
-            <img src="bannerimage6.jpg" alt="Image 2" />
+            <img src="/images/bannerimage6.jpg" alt="Image 2" />
           </SplideSlide>
         </SplideTrack>
         <div className="splide__arrows border-red-500 border-solid border-2 " />
