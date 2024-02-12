@@ -5,10 +5,10 @@ import Link from "next/link";
 export default function Collections() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen h-auto gap-y-[70px] w-screen md:bg-cover p-44 bg-[url('https://raw.githubusercontent.com/reannab16/readmeimgs/03f4294c26db6520341bb3a4678abcb40d637c50/paisley-background.svg')] ">
-      <div className="text-[var(--maybe-text-colour)] text-3xl relative">
+      <div className="text-[var(--maybe-text-colour)] md:text-3xl text-2xl relative">
         COLLECTIONS{" "}
-        <PinkPaisleyRight className="absolute -top-6 -right-[3.75rem] h-[63px]" />
-        <PinkPaisleyLeft className="absolute -bottom-6 -left-[3.75rem] h-[63px]" />
+        <PinkPaisleyRight className="absolute md:-top-6 md:-right-[3.75rem] md:h-[63px] h-[45px] -right-[2.7rem] -top-3" />
+        <PinkPaisleyLeft className="absolute md:-bottom-6 md:-left-[3.75rem] md:h-[63px] h-[45px] -left-[2.7rem] -bottom-3" />
       </div>
       <div className="flex items-center justify-center gap-x-[30px] gap-y-[70px] w-[876px] flex-wrap md:flex-row flex-col">
         {categories.map((cate) => {

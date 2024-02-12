@@ -4,12 +4,14 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import { PinkPaisleyLeft, PinkPaisleyRight } from "../icons";
-import NavDropdown from "../components/navDropdown";
+import NavDropdown from "../smallcomponents/navDropdown";
 import MobileMenu from "./mobileMenu";
+import { useRouter } from "next/navigation";
 
 
 export default function NavBar() {
     const cartCount = 0;
+    
 
   return (
     <div className="w-full h-auto flex-col flex items-center justify-start container text-[var(--maybe-text-colour)] md:px-4 px-8 md:pb-6">
@@ -76,7 +78,7 @@ const links: LinkType[] = [
     dropdown: [
       {
         name: "all",
-        link: "",
+        link: "all",
       }
     ]
   },
@@ -87,19 +89,19 @@ const links: LinkType[] = [
     dropdown: [
       {
         name: "all necklaces",
-        link: "",
+        link: "all-necklaces",
       },
       {
         name: "statement necklaces",
-        link: "",
+        link: "statement-necklaces",
       },
       {
         name: "chokers",
-        link: "",
+        link: "chokers",
       },
       {
         name: "evil eye",
-        link: "",
+        link: "evil-eye",
       },
       // {
       //   name: "double chain",
@@ -114,57 +116,57 @@ const links: LinkType[] = [
     dropdown: [
       {
         name:"all earrings",
-        link: "",
+        link: "all-earrings",
       },
       {
         name: "stud earrings",
-        link: "",
+        link: "stud-earrings",
       },
       {
         name: "drop earrings",
-        link: "",
+        link: "drop-earrings",
       },
       {
         name: "hoop earrings",
-        link: "",
+        link: "hoop-earrings",
       },
       {
         name: "statement earrings",
-        link: "",
+        link: "statement-earrings",
       },
     ]
   },
   {
     name: "rings",
-    link: "",
+    link: "rings",
     jewel: true,
     dropdown: [
       {
         name:"all rings",
-        link: "",
+        link: "all-rings",
       }
     ]
   },
 
   {
     name: "bracelets",
-    link: "",
+    link: "bracelets",
     jewel: true,
     dropdown: [
       {
         name:"all bracelets",
-        link: "",
+        link: "all-bracelets",
       }
     ]
   },
   {
     name: "workshops",
-    link: "",
+    link: "workshops",
     jewel: false,
   },
   {
     name: "customize",
-    link: "",
+    link: "customize",
     jewel: false,
   },
 ];

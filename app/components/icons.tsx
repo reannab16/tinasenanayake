@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function PinkPaisleyLeft({ className }: { className?: string }) {
@@ -15,6 +16,11 @@ function BannerImage1({ className }: { className?: string }) {
 function FooterPaisley({ className }: { className?: string }) {
   return <img src="smolflowers.svg" className={className} />;
 }
+
+function MobileFooterPaisley({className}:{className?:string}) {
+  return <img src="mobilefooter.svg" className={className}/>
+}
+
 function NecklaceCategory({ className }: { className?: string }) {
   return <img src="necklace.png" className={className} />;
 }
@@ -50,4 +56,5 @@ export {
   EarringCategory,
   CustomCategory,
   StatementCategory,
+  MobileFooterPaisley
 };

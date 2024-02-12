@@ -11,9 +11,12 @@ import {
 } from "../ui/navigation-menu";
 import { LinkType } from "../nav/NavBar";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function NavDropdown({ links }: { links: LinkType[] }) {
   const [which, setWhich] = useState("");
+  const router= useRouter();
+
   return (
     <NavigationMenu>
       <NavigationMenuList className="w-full gap-x-16 flex justify-center text-sm ">
@@ -37,16 +40,17 @@ export default function NavDropdown({ links }: { links: LinkType[] }) {
                   </NavigationMenuTrigger>
 
                   <NavigationMenuContent className="flex flex-col justify-start items-start px-1 py-1 border-0 bg-[var(--light-purple)] outline-0 text-[var(--cream)]">
-                    {item.dropdown?.map((item) => {
+                    {item.dropdown?.map((dropitem) => {
                       return (
                         <NavigationMenuLink
                           asChild
                           className="py-2 px-2 whitespace-nowrap hover:bg-[var(--trans-cream)] rounded-md w-full"
-                          key={item.name}
+                          key={dropitem.name}
+                          onClick={()=>{console.log(dropitem.name); router.push(`/shop/${dropitem.link}`); }}
                         >
-                          <Link href="" className="cursor-pointer ">
-                            {item.name}
-                          </Link>
+                          <div className="cursor-pointer ">
+                            {dropitem.name}
+                          </div>
                         </NavigationMenuLink>
                       );
                     })}
