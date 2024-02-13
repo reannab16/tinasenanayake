@@ -90,7 +90,7 @@ const links: LinkType[] = [
     dropdown: [
       {
         name: "all necklaces",
-        link: "all-necklaces",
+        link: "necklaces",
       },
       {
         name: "statement necklaces",
@@ -117,7 +117,7 @@ const links: LinkType[] = [
     dropdown: [
       {
         name:"all earrings",
-        link: "all-earrings",
+        link: "earrings",
       },
       {
         name: "stud earrings",
@@ -144,7 +144,7 @@ const links: LinkType[] = [
     dropdown: [
       {
         name:"all rings",
-        link: "all-rings",
+        link: "rings",
       }
     ]
   },
@@ -156,7 +156,7 @@ const links: LinkType[] = [
     dropdown: [
       {
         name:"all bracelets",
-        link: "all-bracelets",
+        link: "bracelets",
       }
     ]
   },

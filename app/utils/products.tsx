@@ -5,7 +5,7 @@ export const products = [
     description:
       "A dainty beautiful light blue chalcedony necklace. Wear this necklace with a blue top to look like a million dollars!",
     price: "Rs 20,000",
-    category: ["necklaces"],
+    category: [["necklaces"]],
     inStock: true,
     colours: [
       {
@@ -53,7 +53,7 @@ export const products = [
     description:
       "Fresh, vibrant and hopeful green. There isn't anything quite like it.",
     price: "Rs 27,000",
-    category: [["necklace", "statement necklace"]],
+    category: [["necklaces", "statement necklace"]],
     inStock: true,
     colours: [
       {

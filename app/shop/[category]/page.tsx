@@ -1,15 +1,24 @@
+import { products } from "@/app/utils/products";
 import React from "react";
 interface IPrams {
-    category?: string
+  category?: string;
 }
 
-export default function CategoryPage({params}: {params: IPrams}) {
+export default function CategoryPage({ params }: { params: IPrams }) {
+  return (
+    <div>
+      {params.category?.replaceAll("-", " ")}
+      <div className="">
+        {products.map((item) => {
+          console.log(item.name, item.category[0][0] === params.category);
 
-
-
-    return(
-        <div>
-            {params.category}
-        </div>
-    )
+          return (
+            item.category[0][0] === params.category && (
+              <div key={item.name}>{item.name}</div>
+            )
+          );
+        })}
+      </div>
+    </div>
+  );
 }
