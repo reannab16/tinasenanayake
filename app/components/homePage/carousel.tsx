@@ -25,7 +25,7 @@ export default function carousel() {
       >
         <SplideTrack className="absolute top-8">
           <SplideSlide>
-            <img src="/images/bannerimage1.jpg" alt="Image 1" className="2xl:w-[1440px] w-screen h-[35.5rem]" />
+            <img src="/images/screenshotted1.png" alt="Image 1" className="2xl:w-[1440px] w-screen h-[35.5rem]" />
           </SplideSlide>
           <SplideSlide>
             <img
