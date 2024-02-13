@@ -25,7 +25,7 @@ export default function carousel() {
       >
         <SplideTrack className="absolute top-8">
           <SplideSlide>
-            <img src="/images/bannerimage1.jpg" alt="Image 1" />
+            <img src="/images/bannerimage1.jpg" alt="Image 1" className="2xl:w-[1440px] w-screen h-[35.5rem]" />
           </SplideSlide>
           <SplideSlide>
             <img
@@ -35,16 +35,16 @@ export default function carousel() {
             />
           </SplideSlide>
           <SplideSlide>
-            <img src="/images/bannerimage3.jpg" alt="Image 2" />
+            <img src="/images/bannerimage3.jpg" alt="Image 2" className="2xl:w-[1440px] w-screen h-[35.5rem]" />
           </SplideSlide>
           <SplideSlide>
-            <img src="/images/bannerimage5.jpg" alt="Image 3" />
+            <img src="/images/bannerimage5.jpg" alt="Image 3" className="2xl:w-[1440px] w-screen h-[35.5rem]" />
           </SplideSlide>
           <SplideSlide>
-            <img src="/images/bannerimage4.jpg" alt="Image 4" />
+            <img src="/images/bannerimage4.jpg" alt="Image 4" className="2xl:w-[1440px] w-screen h-[35.5rem]" />
           </SplideSlide>
           <SplideSlide>
-            <img src="/images/bannerimage6.jpg" alt="Image 5" />
+            <img src="/images/bannerimage6.jpg" alt="Image 5" className="2xl:w-[1440px] w-screen h-[35.5rem]" />
           </SplideSlide>
         </SplideTrack>
         <div className="splide__arrows border-red-500 border-solid border-2 " />
