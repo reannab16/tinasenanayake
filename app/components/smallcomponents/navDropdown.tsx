@@ -46,7 +46,7 @@ export default function NavDropdown({ links }: { links: LinkType[] }) {
                           asChild
                           className="py-2 px-2 whitespace-nowrap hover:bg-[var(--trans-cream)] rounded-md w-full"
                           key={dropitem.name}
-                          onClick={()=>{console.log(dropitem.name); router.push(`/shop/${dropitem.link}`); }}
+                          onClick={()=>{router.push(`/shop/${dropitem.link}`); }}
                         >
                           <div className="cursor-pointer ">
                             {dropitem.name}
