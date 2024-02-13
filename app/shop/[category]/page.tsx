@@ -1,16 +1,15 @@
 import React from "react";
-// interface IPrams {
-//     category?: string
-// }
+interface IPrams {
+    category?: string
+}
 
-export default function CategoryPage() {
-    // console.log('params', params)
+export default function CategoryPage({params}: {params: IPrams}) {
 
 
 
     return(
         <div>
-            hi
+            {params.category}
         </div>
     )
 }

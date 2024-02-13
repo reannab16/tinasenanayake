@@ -7,6 +7,7 @@ import { PinkPaisleyLeft, PinkPaisleyRight } from "../icons";
 import NavDropdown from "../smallcomponents/navDropdown";
 import MobileMenu from "./mobileMenu";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 
 export default function NavBar() {
@@ -20,7 +21,7 @@ export default function NavBar() {
           <div className="cursor-pointer flex items-center justify-center">
             <SearchOutlinedIcon className="h-5" />
           </div>
-          <div className="cursor-pointer py-1 px-3 rounded-full hover:bg-[var(--light-purple)] hover:text-[var(--cream)] duration-300">home</div>
+          <Link href="/" className="cursor-pointer py-1 px-3 rounded-full hover:bg-[var(--light-purple)] hover:text-[var(--cream)] duration-300">home</Link>
           <div className="cursor-pointer py-1 px-3 rounded-full hover:bg-[var(--light-purple)] hover:text-[var(--cream)] duration-300">our story</div>
         </div>
         <MobileMenu links={links}/>
