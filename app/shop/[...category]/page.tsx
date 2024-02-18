@@ -43,9 +43,8 @@ export default function CategoryPage({ params }: { params: IPrams }) {
   return (
     <div className="flex flex-col text-[var(--maybe-text-colour)] items-start container w-screen px-5 text-sm">
       <div>shop  {Array.isArray(params?.category) ? (params.category.map((subcate)=>{
-        console.log("hi")
         return(
-          <span>| {subcate.replaceAll("-", " ")} </span>
+          <span key={subcate}>| {subcate.replaceAll("-", " ")} </span>
         )
       })) : <span></span>}</div>
       <div className="italic text-3xl font-light pt-10 pb-8">
@@ -74,7 +73,11 @@ export default function CategoryPage({ params }: { params: IPrams }) {
         })} */}
         {products.filter(checkCates).map((item)=>{
           return(
-            <div key={item.name}>{item.name}</div>
+            <div key={item.name}>
+              <div><img src={item.mainImage} alt="" className=" h-72 w-60 object-cover"/></div>
+              <div>{item.name}</div>
+              <div>{item.price}</div>
+            </div>
           )
         })}
       </div>

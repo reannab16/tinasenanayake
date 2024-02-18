@@ -7,7 +7,7 @@ export const products = [
     price: "Rs 20,000",
     category: ["necklaces"],
     inStock: true,
-    mainImage: "necklace.png",
+    mainImage: "/necklace.png",
     colours: [
       {
         colour: "Blue",
@@ -24,7 +24,7 @@ export const products = [
     price: "Rs 25,000",
     category: ["earrings", "gold", "drop"],
     inStock: true,
-    mainImage: "earring.png",
+    mainImage: "/earring.png",
     colours: [
       {
         colour: "pink",
@@ -41,7 +41,7 @@ export const products = [
     price: "Rs 23,000",
     category: ["bracelets", "gold"],
     inStock: true,
-    mainImage: "bracelet.png",
+    mainImage: "/bracelet.png",
     colours: [
       {
         colour: "multi",
@@ -58,7 +58,7 @@ export const products = [
     price: "Rs 27,000",
     category: ["necklaces", "statement-necklaces", "evil-eye"],
     inStock: true,
-    mainImage: "statement.png",
+    mainImage: "/statement.png",
     colours: [
       {
         colour: "green",
@@ -75,7 +75,7 @@ export const products = [
     price: "Rs 27,000",
     category: ["ring", "gold"],
     inStock: true,
-    mainImage: "custom.png",
+    mainImage: "/custom.png",
     colours: [
       {
         colour: "blue",
