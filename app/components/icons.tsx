@@ -2,11 +2,11 @@ import Image from "next/image";
 import React from "react";
 
 function PinkPaisleyLeft({ className }: { className?: string }) {
-  return <img className={className} src="paisleypinkleft.svg" />;
+  return <img className={className} src="/paisleypinkleft.svg" />;
 }
 
 function PinkPaisleyRight({ className }: { className?: string }) {
-  return <img className={className} src="paisleypinkright.svg" />;
+  return <img className={className} src="/paisleypinkright.svg" />;
 }
 
 function BannerImage1({ className }: { className?: string }) {
@@ -14,11 +14,11 @@ function BannerImage1({ className }: { className?: string }) {
 }
 
 function FooterPaisley({ className }: { className?: string }) {
-  return <img src="smolflowers.svg" className={className} />;
+  return <img src="/smolflowers.svg" className={className} />;
 }
 
 function MobileFooterPaisley({className}:{className?:string}) {
-  return <img src="mobilefooter.svg" className={className}/>
+  return <img src="/mobilefooter.svg" className={className}/>
 }
 
 function NecklaceCategory({ className }: { className?: string }) {

@@ -36,19 +36,19 @@ const categories: CategoryType[] = [
     name: "RINGS",
     quantity: 25,
     img: <RingCategory className="border-b-[1px] border-[var(--dark-purple)] border-solid h-[270px] w-[270px] rounded-t-xl" />,
-    link: "/shop/all-rings"
+    link: "/shop/rings"
   },
   {
     name: "NECKLACES",
     quantity: 21,
     img: <NecklaceCategory className="border-b-[1px] border-[var(--dark-purple)] border-solid h-[270px] w-[270px] rounded-t-xl" />,
-    link: "/shop/all-necklaces"
+    link: "/shop/necklaces"
   },
   {
     name: "EARRINGS",
     quantity: 18,
     img: <EarringCategory className="border-b-[1px] border-[var(--dark-purple)] border-solid h-[270px] w-[270px] rounded-t-xl" />,
-    link: "/shop/all-earrings"
+    link: "/shop/earrings"
   },
   {
     name: "STATEMENT PIECES",
@@ -60,7 +60,7 @@ const categories: CategoryType[] = [
     name: "BRACELETS",
     quantity: 21,
     img: <BraceletCategory className="border-b-[1px] border-[var(--dark-purple)] border-solid h-[270px] rounded-t-xl" />,
-    link: "/shop/all-bracelets"
+    link: "/shop/bracelets"
   },
   {
     name: "CUSTOM",

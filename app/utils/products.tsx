@@ -1,7 +1,7 @@
 export const products = [
   {
     id: "fd23c8f7-c0a6-484c-8023-b3225a53537d",
-    name: "dainty chalcedony necklace",
+    name: "Dainty Chalcedony Necklace",
     description:
       "A dainty beautiful light blue chalcedony necklace. Wear this necklace with a blue top to look like a million dollars!",
     price: "Rs 20,000",
@@ -18,7 +18,7 @@ export const products = [
   },
   {
     id: "c8acf904-5221-44c7-8568-328d91bfabd4",
-    name: "rose quartz earrings",
+    name: "Rose Quartz Earrings",
     description:
       "A lovely pair of gold plated sterling silver earrings with rose quartz. Apart from being a firm favourite rose quartz is also the stone of calmness and love.",
     price: "Rs 25,000",
@@ -35,7 +35,7 @@ export const products = [
   },
   {
     id: "8abdb309-5e6e-4d72-aff6-bb3aca624e5f",
-    name: "charm bracelet",
+    name: "Charm Bracelet",
     description:
       "This gold plated sterling silver bracelet has the daintiest semi precious stone charms attached.",
     price: "Rs 23,000",
@@ -52,7 +52,7 @@ export const products = [
   },
   {
     id: "6be8273a-c25f-4c73-bd35-1078ca251d39",
-    name: "evil eye statement necklace",
+    name: "Evil Eye Statement Necklace",
     description:
       "Fresh, vibrant and hopeful green. There isn't anything quite like it.",
     price: "Rs 27,000",
@@ -69,11 +69,11 @@ export const products = [
   },
   {
     id: "2dfaceb5-cf74-49fc-ade0-d66134346b8b",
-    name: "ring",
+    name: "Ring",
     description:
       "Beautiful rings. Blue topaz and amethyst. ",
     price: "Rs 27,000",
-    category: ["ring", "gold"],
+    category: ["rings", "gold"],
     inStock: true,
     mainImage: "/custom.png",
     colours: [

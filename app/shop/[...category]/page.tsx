@@ -7,24 +7,22 @@ interface IPrams {
 }
 
 type productType = {
-  id: string,
-  name: string,
-  description:
-    string,
-  price: string,
-  category: string[],
-  inStock: boolean,
-  mainImage: string,
-  colours: 
-    {
-      colour: string,
-      colourCode: string,
-      images: string[],
-    }[]
-}
+  id: string;
+  name: string;
+  description: string;
+  price: string;
+  category: string[];
+  inStock: boolean;
+  mainImage: string;
+  colours: {
+    colour: string;
+    colourCode: string;
+    images: string[];
+  }[];
+};
 
 export default function CategoryPage({ params }: { params: IPrams }) {
-  console.log(params)
+  console.log(params);
 
   function checkCates(product: productType) {
     if (Array.isArray(params?.category)) {
@@ -34,22 +32,30 @@ export default function CategoryPage({ params }: { params: IPrams }) {
         }
       }
       return true;
-
     }
-    
   }
-
 
   return (
     <div className="flex flex-col text-[var(--maybe-text-colour)] items-start container w-screen px-5 text-sm">
-      <div>shop  {Array.isArray(params?.category) ? (params.category.map((subcate)=>{
-        return(
-          <span key={subcate}>| {subcate.replaceAll("-", " ")} </span>
-        )
-      })) : <span></span>}</div>
+      <div>
+        shop{" "}
+        {Array.isArray(params?.category) ? (
+          params.category.map((subcate) => {
+            return <span key={subcate}>| {subcate.replaceAll("-", " ")} </span>;
+          })
+        ) : (
+          <span></span>
+        )}
+      </div>
       <div className="italic text-3xl font-light pt-10 pb-8">
         {/* {params[0].replaceAll("-", " ")} */}
-        {Array.isArray(params?.category) ? <span>{params.category[params.category.length - 1].replaceAll("-", " ")}</span>: <span></span>}
+        {Array.isArray(params?.category) ? (
+          <span>
+            {params.category[params.category.length - 1].replaceAll("-", " ")}
+          </span>
+        ) : (
+          <span></span>
+        )}
       </div>
       <div className="flex gap-x-5 mb-14">
         <div className="px-4 py-1 w-36 bg-[var(--light-purple)] rounded-full text-[var(--cream)] text-sm">
@@ -61,24 +67,39 @@ export default function CategoryPage({ params }: { params: IPrams }) {
       </div>
 
       <div className="flex gap-x-10 pb-20">
-        {/* {products.map((item) => {
+        {products.filter(checkCates).map((item) => {
           return (
-            item.category[0][0] === params.category && (
-              <div key={item.name} className="flex flex-col gap-y-2">
-                <img src={item.mainImage} alt="" className="h-44 w-36"/>
-                <div>{item.name}</div>
+            <div key={item.name} className="flex flex-col gap-y-2">
+              <div>
+                <img
+                  src={item.mainImage}
+                  alt=""
+                  className=" h-72 w-60 object-cover"
+                />
               </div>
-            )
-          );
-        })} */}
-        {products.filter(checkCates).map((item)=>{
-          return(
-            <div key={item.name}>
-              <div><img src={item.mainImage} alt="" className=" h-72 w-60 object-cover"/></div>
-              <div>{item.name}</div>
-              <div>{item.price}</div>
+              <div className="flex flex-col gap-y-1">
+                <div>{item.name}</div>
+                <div className="font-light text-xs">{item.price}</div>
+                <div className="flex gap-x-2">
+                {item.colours.length > 1 && item.colours.map((colour)=>{
+                  console.log(colour.colourCode)
+                  return(
+                    
+                    <div key={colour.colour}
+                      className={`rounded-full border-solid border-[var(--maybe-text-colour)] h-5 w-5 border-[1px] flex items-center justify-center`}
+                    >
+                      <div className={`bg-[${colour.colourCode}] h-[14px] w-[14px] rounded-full`}></div>
+                    </div>
+                  
+
+                  )
+                })
+                  
+                }
+                </div>
+              </div>
             </div>
-          )
+          );
         })}
       </div>
     </div>
