@@ -5,8 +5,9 @@ export const products = [
     description:
       "A dainty beautiful light blue chalcedony necklace. Wear this necklace with a blue top to look like a million dollars!",
     price: "Rs 20,000",
-    category: [["necklaces"]],
+    category: ["necklaces"],
     inStock: true,
+    mainImage: "necklace.png",
     colours: [
       {
         colour: "Blue",
@@ -21,8 +22,9 @@ export const products = [
     description:
       "A lovely pair of gold plated sterling silver earrings with rose quartz. Apart from being a firm favourite rose quartz is also the stone of calmness and love.",
     price: "Rs 25,000",
-    category: [["earrings", "gold", "drop"]],
+    category: ["earrings", "gold", "drop"],
     inStock: true,
+    mainImage: "earring.png",
     colours: [
       {
         colour: "pink",
@@ -37,8 +39,9 @@ export const products = [
     description:
       "This gold plated sterling silver bracelet has the daintiest semi precious stone charms attached.",
     price: "Rs 23,000",
-    category: [["bracelets", "gold"]],
+    category: ["bracelets", "gold"],
     inStock: true,
+    mainImage: "bracelet.png",
     colours: [
       {
         colour: "multi",
@@ -53,8 +56,9 @@ export const products = [
     description:
       "Fresh, vibrant and hopeful green. There isn't anything quite like it.",
     price: "Rs 27,000",
-    category: [["necklaces", "statement necklace"]],
+    category: ["necklaces", "statement-necklaces", "evil-eye"],
     inStock: true,
+    mainImage: "statement.png",
     colours: [
       {
         colour: "green",
@@ -69,8 +73,9 @@ export const products = [
     description:
       "Beautiful rings. Blue topaz and amethyst. ",
     price: "Rs 27,000",
-    category: [["ring", "gold"]],
+    category: ["ring", "gold"],
     inStock: true,
+    mainImage: "custom.png",
     colours: [
       {
         colour: "blue",

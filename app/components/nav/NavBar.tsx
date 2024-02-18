@@ -94,15 +94,15 @@ const links: LinkType[] = [
       },
       {
         name: "statement necklaces",
-        link: "statement-necklaces",
+        link: "/necklaces/statement-necklaces",
       },
       {
         name: "chokers",
-        link: "chokers",
+        link: "/necklaces/chokers",
       },
       {
         name: "evil eye",
-        link: "evil-eye",
+        link: "/necklaces/evil-eye",
       },
       // {
       //   name: "double chain",
@@ -121,19 +121,19 @@ const links: LinkType[] = [
       },
       {
         name: "stud earrings",
-        link: "stud-earrings",
+        link: "/earrings/stud-earrings",
       },
       {
         name: "drop earrings",
-        link: "drop-earrings",
+        link: "/earrings/drop-earrings",
       },
       {
         name: "hoop earrings",
-        link: "hoop-earrings",
+        link: "/earrings/hoop-earrings",
       },
       {
         name: "statement earrings",
-        link: "statement-earrings",
+        link: "/earrings/statement-earrings",
       },
     ]
   },
